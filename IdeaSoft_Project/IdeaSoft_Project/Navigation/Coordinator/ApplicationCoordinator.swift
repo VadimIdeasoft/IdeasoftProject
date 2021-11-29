@@ -57,14 +57,12 @@ extension ApplicationCoordinator: CoordinatorType {
         if let option = option, let coordinator = childCoordinators.first(where: { $0 is DeepLinkHandleable }) {
             (coordinator as? DeepLinkHandleable)?.handle(deepLink: option)
         } else {
-            debugPrint("start with deeplink option - unexpected flow")
-            return
+            runMainFlow(option: option)
         }
     }
 }
 
 private extension ApplicationCoordinator {
-    
     func runMainFlow(option: DeepLinkOption?) {
         let coordinator = coordinatorFactory.makeTabbarCoordinator()
         coordinator.finishFlow = { [unowned self, unowned coordinator] in

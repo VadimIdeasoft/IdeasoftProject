@@ -10,4 +10,5 @@ import Foundation
 // MARK:- Storyboards enum
 enum Storyboards: String {
     case main = "Main"
+    case tabbar = "Tabbar"
 }

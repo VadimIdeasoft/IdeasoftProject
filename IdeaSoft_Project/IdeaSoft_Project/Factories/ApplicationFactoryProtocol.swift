@@ -8,8 +8,8 @@
 import Foundation
 
 protocol ApplicationFactoryProtocol {
-    func makeAuthorizationModule() -> BaseViewProtocol//AuthorizationModule
-    func makePrelaunchModule() -> BaseViewProtocol// PrelaunchModule
+//    func makeAuthorizationModule() -> BaseViewProtocol//AuthorizationModule
+//    func makePrelaunchModule() -> BaseViewProtocol// PrelaunchModule
 }
 
 extension ApplicationFactoryProtocol {

@@ -25,7 +25,7 @@ final class TabbarViewController: UITabBarController, UITabBarControllerDelegate
     private var leadingConstraint: NSLayoutConstraint?
     
     class func instantiate(with models: [TabbarItem] ) -> TabbarViewController {
-        let vc = TabbarViewController.controllerFromStoryboard(.main)
+        let vc = TabbarViewController.controllerFromStoryboard(.tabbar)
         vc.models = models
         return vc
     }
@@ -41,8 +41,6 @@ extension TabbarViewController {
     
     override func loadView() {
         super.loadView()
-        
-        
     }
     
     override func viewDidLoad() {
@@ -58,6 +56,7 @@ extension TabbarViewController {
         
         tabBar.unselectedItemTintColor = UIColor.darkGray
         presenter?.viewDidLoad()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -11,6 +11,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    lazy var coordinator: ApplicationCoordinator = createAppCoordinator()
+    
+    var rootController: UINavigationController {
+        window?.rootViewController = UINavigationController()
+        return window?.rootViewController as! UINavigationController
+    
+    }
     
     static var tabBarController: TabbarViewController? {
         let scenes = UIApplication.shared.connectedScenes
@@ -26,6 +33,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        coordinator.start()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -59,3 +68,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+
+// MARK: - Coordinator creation
+extension SceneDelegate {
+    private func createAppCoordinator() -> ApplicationCoordinator {
+        return ApplicationCoordinator(router: Router(navigationController: rootController),
+                                      moduleFactory: ModulesFactory(),
+                                      coordinatorFactory: CoordinatorFactory())
+    }
+}
