@@ -18,6 +18,12 @@
 		9C8577C127563D6A0016BD53 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577C027563D6A0016BD53 /* Date+Extensions.swift */; };
 		9C8577C327563E5F0016BD53 /* Timezone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577C227563E5F0016BD53 /* Timezone+Extensions.swift */; };
 		9C8577C62756402C0016BD53 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577C52756402C0016BD53 /* ServiceLocator.swift */; };
+		9C8577C9275666210016BD53 /* ScrollableSheetAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577C8275666210016BD53 /* ScrollableSheetAnimator.swift */; };
+		9C8577CB2756662F0016BD53 /* ModalSheetAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577CA2756662F0016BD53 /* ModalSheetAnimator.swift */; };
+		9C8577CE2756668A0016BD53 /* Embeddable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577CD2756668A0016BD53 /* Embeddable.swift */; };
+		9C8577D0275666D00016BD53 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577CF275666D00016BD53 /* SheetViewController.swift */; };
+		9C8577D2275667290016BD53 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577D1275667290016BD53 /* NibLoadableView.swift */; };
+		9C8577D52756683F0016BD53 /* DirectionalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577D42756683F0016BD53 /* DirectionalPanGestureRecognizer.swift */; };
 		9CCB1DDF2751071C0011709A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB1DDE2751071C0011709A /* AppDelegate.swift */; };
 		9CCB1DE12751071C0011709A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB1DE02751071C0011709A /* SceneDelegate.swift */; };
 		9CCB1DE62751071C0011709A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CCB1DE42751071C0011709A /* Main.storyboard */; };
@@ -76,6 +82,12 @@
 		9C8577C027563D6A0016BD53 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		9C8577C227563E5F0016BD53 /* Timezone+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timezone+Extensions.swift"; sourceTree = "<group>"; };
 		9C8577C52756402C0016BD53 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		9C8577C8275666210016BD53 /* ScrollableSheetAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableSheetAnimator.swift; sourceTree = "<group>"; };
+		9C8577CA2756662F0016BD53 /* ModalSheetAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSheetAnimator.swift; sourceTree = "<group>"; };
+		9C8577CD2756668A0016BD53 /* Embeddable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Embeddable.swift; sourceTree = "<group>"; };
+		9C8577CF275666D00016BD53 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
+		9C8577D1275667290016BD53 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		9C8577D42756683F0016BD53 /* DirectionalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionalPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		9CCB1DDB2751071C0011709A /* IdeaSoft_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdeaSoft_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCB1DDE2751071C0011709A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CCB1DE02751071C0011709A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +181,33 @@
 				9C8577C52756402C0016BD53 /* ServiceLocator.swift */,
 			);
 			path = ServiceLocator;
+			sourceTree = "<group>";
+		};
+		9C8577C7275666050016BD53 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				9C8577CC2756666F0016BD53 /* SheetAnimators */,
+			);
+			path = Animators;
+			sourceTree = "<group>";
+		};
+		9C8577CC2756666F0016BD53 /* SheetAnimators */ = {
+			isa = PBXGroup;
+			children = (
+				9C8577C8275666210016BD53 /* ScrollableSheetAnimator.swift */,
+				9C8577CA2756662F0016BD53 /* ModalSheetAnimator.swift */,
+				9C8577CD2756668A0016BD53 /* Embeddable.swift */,
+				9C8577CF275666D00016BD53 /* SheetViewController.swift */,
+			);
+			path = SheetAnimators;
+			sourceTree = "<group>";
+		};
+		9C8577D32756682D0016BD53 /* Gesture Recognizers */ = {
+			isa = PBXGroup;
+			children = (
+				9C8577D42756683F0016BD53 /* DirectionalPanGestureRecognizer.swift */,
+			);
+			path = "Gesture Recognizers";
 			sourceTree = "<group>";
 		};
 		9CCB1DD22751071C0011709A = {
@@ -284,6 +323,8 @@
 		9CCB1E0D27510D1B0011709A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				9C8577D32756682D0016BD53 /* Gesture Recognizers */,
+				9C8577C7275666050016BD53 /* Animators */,
 				9CCB1E4A27512F660011709A /* Presenters */,
 				9CCB1E0E27510D270011709A /* ZoomModeChecker.swift */,
 				9CCB1E1027510D510011709A /* InfoAlert.swift */,
@@ -291,6 +332,7 @@
 				9CCB1E192751146B0011709A /* Storyboards.swift */,
 				9CCB1E392751269D0011709A /* Debug.swift */,
 				9CCB1E4627512CBA0011709A /* NSObject+ClassDefinition.swift */,
+				9C8577D1275667290016BD53 /* NibLoadableView.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -443,15 +485,20 @@
 				9CCB1E32275125160011709A /* TabbarPresenter.swift in Sources */,
 				9CCB1DDF2751071C0011709A /* AppDelegate.swift in Sources */,
 				9CCB1E0F27510D270011709A /* ZoomModeChecker.swift in Sources */,
+				9C8577D52756683F0016BD53 /* DirectionalPanGestureRecognizer.swift in Sources */,
+				9C8577CB2756662F0016BD53 /* ModalSheetAnimator.swift in Sources */,
+				9C8577C9275666210016BD53 /* ScrollableSheetAnimator.swift in Sources */,
 				9CCB1DE12751071C0011709A /* SceneDelegate.swift in Sources */,
 				9CCB1E4527512C770011709A /* UIViewController+Extensions.swift in Sources */,
 				9C8577B4275615980016BD53 /* TestViewController.swift in Sources */,
 				9CCB1E4127512A6E0011709A /* UIStoryboard+Extensions.swift in Sources */,
 				9CCB1E222751209F0011709A /* CoordinatorFactory.swift in Sources */,
+				9C8577CE2756668A0016BD53 /* Embeddable.swift in Sources */,
 				9CCB1E1E27511EC90011709A /* ApplicationFactoryProtocol.swift in Sources */,
 				9C8577B6275616220016BD53 /* TestCoordinatorOutput.swift in Sources */,
 				9CCB1E34275125230011709A /* TabbarViewController.swift in Sources */,
 				9CCB1E0727510AB00011709A /* Routable.swift in Sources */,
+				9C8577D2275667290016BD53 /* NibLoadableView.swift in Sources */,
 				9CCB1E2A275122220011709A /* TabbarFactoryProtocol.swift in Sources */,
 				9CCB1E1127510D510011709A /* InfoAlert.swift in Sources */,
 				9C8577BC2756178D0016BD53 /* RootCoordinator.swift in Sources */,
@@ -466,6 +513,7 @@
 				9C8577C327563E5F0016BD53 /* Timezone+Extensions.swift in Sources */,
 				9CCB1E0C27510CEE0011709A /* Reloadable.swift in Sources */,
 				9CCB1E2027511EF90011709A /* BaseViewProtocol.swift in Sources */,
+				9C8577D0275666D00016BD53 /* SheetViewController.swift in Sources */,
 				9CCB1E1C275114B70011709A /* Router.swift in Sources */,
 				9C8577BA275616E10016BD53 /* TestFactoryProtocol.swift in Sources */,
 				9CCB1E4727512CBA0011709A /* NSObject+ClassDefinition.swift in Sources */,
