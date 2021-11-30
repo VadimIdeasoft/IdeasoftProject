@@ -70,7 +70,8 @@ private extension ApplicationCoordinator {
             self.removeDependency(coordinator)
         }
         addDependency(coordinator)
-        coordinator.start(with: option)
+        
         router.setRootModule(coordinator, hideBar: true, animated: false)
+        coordinator.start(with: option)
     }
 }

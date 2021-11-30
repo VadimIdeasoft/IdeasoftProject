@@ -60,7 +60,7 @@ extension TabbarPresenter: TabbarPresenterInput {
     
     // MARK: Module life cycle
     func viewDidLoad() {
-
+        onViewDidLoad?()
     }
     
     func viewDidAppear(_ animated: Bool) {
