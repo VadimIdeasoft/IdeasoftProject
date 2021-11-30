@@ -14,6 +14,10 @@
 		9C8577B8275616310016BD53 /* TestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577B7275616310016BD53 /* TestCoordinator.swift */; };
 		9C8577BA275616E10016BD53 /* TestFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577B9275616E10016BD53 /* TestFactoryProtocol.swift */; };
 		9C8577BC2756178D0016BD53 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577BB2756178D0016BD53 /* RootCoordinator.swift */; };
+		9C8577BF27563CEB0016BD53 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577BE27563CEB0016BD53 /* String+Extensions.swift */; };
+		9C8577C127563D6A0016BD53 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577C027563D6A0016BD53 /* Date+Extensions.swift */; };
+		9C8577C327563E5F0016BD53 /* Timezone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577C227563E5F0016BD53 /* Timezone+Extensions.swift */; };
+		9C8577C62756402C0016BD53 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577C52756402C0016BD53 /* ServiceLocator.swift */; };
 		9CCB1DDF2751071C0011709A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB1DDE2751071C0011709A /* AppDelegate.swift */; };
 		9CCB1DE12751071C0011709A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB1DE02751071C0011709A /* SceneDelegate.swift */; };
 		9CCB1DE62751071C0011709A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CCB1DE42751071C0011709A /* Main.storyboard */; };
@@ -68,6 +72,10 @@
 		9C8577B7275616310016BD53 /* TestCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoordinator.swift; sourceTree = "<group>"; };
 		9C8577B9275616E10016BD53 /* TestFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactoryProtocol.swift; sourceTree = "<group>"; };
 		9C8577BB2756178D0016BD53 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		9C8577BE27563CEB0016BD53 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		9C8577C027563D6A0016BD53 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		9C8577C227563E5F0016BD53 /* Timezone+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timezone+Extensions.swift"; sourceTree = "<group>"; };
+		9C8577C52756402C0016BD53 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		9CCB1DDB2751071C0011709A /* IdeaSoft_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdeaSoft_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCB1DDE2751071C0011709A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CCB1DE02751071C0011709A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +163,14 @@
 			path = SceneAppDelegates;
 			sourceTree = "<group>";
 		};
+		9C8577C4275640190016BD53 /* ServiceLocator */ = {
+			isa = PBXGroup;
+			children = (
+				9C8577C52756402C0016BD53 /* ServiceLocator.swift */,
+			);
+			path = ServiceLocator;
+			sourceTree = "<group>";
+		};
 		9CCB1DD22751071C0011709A = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +192,7 @@
 			children = (
 				9CCB1DF22751072C0011709A /* Navigation */,
 				9CCB1E14275110FF0011709A /* Factories */,
+				9C8577C4275640190016BD53 /* ServiceLocator */,
 				9CCB1DFE2751085C0011709A /* Supporting Sources */,
 				9CCB1E23275121840011709A /* Flows */,
 				9C8577BD27561C400016BD53 /* SceneAppDelegates */,
@@ -212,6 +229,9 @@
 				9CCB1E4027512A6E0011709A /* UIStoryboard+Extensions.swift */,
 				9CCB1E4427512C770011709A /* UIViewController+Extensions.swift */,
 				9CCB1E4827512D5E0011709A /* Error+Extension.swift */,
+				9C8577BE27563CEB0016BD53 /* String+Extensions.swift */,
+				9C8577C027563D6A0016BD53 /* Date+Extensions.swift */,
+				9C8577C227563E5F0016BD53 /* Timezone+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -435,6 +455,7 @@
 				9CCB1E2A275122220011709A /* TabbarFactoryProtocol.swift in Sources */,
 				9CCB1E1127510D510011709A /* InfoAlert.swift in Sources */,
 				9C8577BC2756178D0016BD53 /* RootCoordinator.swift in Sources */,
+				9C8577C62756402C0016BD53 /* ServiceLocator.swift in Sources */,
 				9CCB1E1A2751146B0011709A /* Storyboards.swift in Sources */,
 				9CCB1E3A2751269D0011709A /* Debug.swift in Sources */,
 				9CCB1E26275121AC0011709A /* TabbarCoordinator.swift in Sources */,
@@ -442,6 +463,7 @@
 				9CCB1E1327510E0A0011709A /* Device.swift in Sources */,
 				9CCB1E0927510ADD0011709A /* Presentable.swift in Sources */,
 				9CCB1DF42751074E0011709A /* BaseCoordinator.swift in Sources */,
+				9C8577C327563E5F0016BD53 /* Timezone+Extensions.swift in Sources */,
 				9CCB1E0C27510CEE0011709A /* Reloadable.swift in Sources */,
 				9CCB1E2027511EF90011709A /* BaseViewProtocol.swift in Sources */,
 				9CCB1E1C275114B70011709A /* Router.swift in Sources */,
@@ -451,6 +473,7 @@
 				9CCB1DF9275108060011709A /* DeepLinkOption.swift in Sources */,
 				9CCB1E3D275127450011709A /* BasePresenterOutput.swift in Sources */,
 				9CCB1E3F2751274E0011709A /* BasePresenterInput.swift in Sources */,
+				9C8577BF27563CEB0016BD53 /* String+Extensions.swift in Sources */,
 				9CCB1DF6275107C80011709A /* CoordinatorType.swift in Sources */,
 				9CCB1E382751253A0011709A /* TabbarInteractor.swift in Sources */,
 				9CCB1E4E275130410011709A /* SheetPresentationController.swift in Sources */,
@@ -459,6 +482,7 @@
 				9CCB1E01275109ED0011709A /* ApplicationCoordinator.swift in Sources */,
 				9C8577B8275616310016BD53 /* TestCoordinator.swift in Sources */,
 				9CCB1E4C27512F780011709A /* ModalPresentationController.swift in Sources */,
+				9C8577C127563D6A0016BD53 /* Date+Extensions.swift in Sources */,
 				9CCB1E4927512D5E0011709A /* Error+Extension.swift in Sources */,
 				9CCB1E0327510A5E0011709A /* ErrorReporter.swift in Sources */,
 				9CCB1E36275125310011709A /* TabbarAssembly.swift in Sources */,
