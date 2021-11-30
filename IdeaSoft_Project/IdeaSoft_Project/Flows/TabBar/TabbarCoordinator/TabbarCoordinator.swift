@@ -68,19 +68,22 @@ extension TabbarCoordinator: CoordinatorType {
         tabbarView.onViewDidLoad = { [unowned self] in
             
             for tabItem in self.tabbarItems {
-//                let router: RouterType
+                let router: RouterType
                 switch tabItem {
                     #warning("create child coordinator here and place as router, then pass it to routers")
                 case .one:
+                    router = createFirstCoordinator(with: nil, color: .red)
                     debugPrint("first coordinator")
                 case .two:
+                    router = createFirstCoordinator(with: nil, color: .blue)
                     debugPrint("second coordinator")
                 case .three:
+                    router = createFirstCoordinator(with: nil, color: .green)
                     debugPrint("third coordinator")
                 }
                 
-                tabItem.customizeTabbarItem(of: router?.toPresent)
-//                self.routers.append(router)
+                tabItem.customizeTabbarItem(of: router.toPresent)
+                self.routers.append(router)
                 
             }
             
@@ -109,5 +112,18 @@ extension TabbarCoordinator: CoordinatorType {
     
     func handle(deepLink option: DeepLinkOption) {
         process(deepLink: option)
+    }
+}
+
+// MARK: - Coordinators creation
+extension TabbarCoordinator {
+    private func createFirstCoordinator(with router: RouterType? = nil, color: UIColor) -> RouterType {
+        let router = router ?? Router(navigationController: UINavigationController())
+        let coordinator = coordinatorFactory.makeTestCoordinator(router: router, with: color)
+        
+        addDependency(coordinator)
+        coordinator.start()
+        
+        return router
     }
 }

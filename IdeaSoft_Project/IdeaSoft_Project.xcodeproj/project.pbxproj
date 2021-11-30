@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9C8577AE275526760016BD53 /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8577AD275526760016BD53 /* Tabbar.storyboard */; };
+		9C8577B2275615840016BD53 /* TestController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8577B1275615840016BD53 /* TestController.storyboard */; };
+		9C8577B4275615980016BD53 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577B3275615980016BD53 /* TestViewController.swift */; };
+		9C8577B6275616220016BD53 /* TestCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577B5275616220016BD53 /* TestCoordinatorOutput.swift */; };
+		9C8577B8275616310016BD53 /* TestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577B7275616310016BD53 /* TestCoordinator.swift */; };
+		9C8577BA275616E10016BD53 /* TestFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577B9275616E10016BD53 /* TestFactoryProtocol.swift */; };
+		9C8577BC2756178D0016BD53 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8577BB2756178D0016BD53 /* RootCoordinator.swift */; };
 		9CCB1DDF2751071C0011709A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB1DDE2751071C0011709A /* AppDelegate.swift */; };
 		9CCB1DE12751071C0011709A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB1DE02751071C0011709A /* SceneDelegate.swift */; };
 		9CCB1DE32751071C0011709A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB1DE22751071C0011709A /* ViewController.swift */; };
@@ -57,6 +63,12 @@
 
 /* Begin PBXFileReference section */
 		9C8577AD275526760016BD53 /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
+		9C8577B1275615840016BD53 /* TestController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestController.storyboard; sourceTree = "<group>"; };
+		9C8577B3275615980016BD53 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		9C8577B5275616220016BD53 /* TestCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoordinatorOutput.swift; sourceTree = "<group>"; };
+		9C8577B7275616310016BD53 /* TestCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoordinator.swift; sourceTree = "<group>"; };
+		9C8577B9275616E10016BD53 /* TestFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactoryProtocol.swift; sourceTree = "<group>"; };
+		9C8577BB2756178D0016BD53 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		9CCB1DDB2751071C0011709A /* IdeaSoft_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdeaSoft_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCB1DDE2751071C0011709A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CCB1DE02751071C0011709A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +129,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C8577AF27552BA70016BD53 /* Base Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Base Coordinators";
+			sourceTree = "<group>";
+		};
+		9C8577B0275615720016BD53 /* Simple Controler */ = {
+			isa = PBXGroup;
+			children = (
+				9C8577B1275615840016BD53 /* TestController.storyboard */,
+				9C8577B3275615980016BD53 /* TestViewController.swift */,
+				9C8577B5275616220016BD53 /* TestCoordinatorOutput.swift */,
+				9C8577B7275616310016BD53 /* TestCoordinator.swift */,
+				9C8577B9275616E10016BD53 /* TestFactoryProtocol.swift */,
+			);
+			path = "Simple Controler";
+			sourceTree = "<group>";
+		};
 		9CCB1DD22751071C0011709A = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +240,7 @@
 				9CCB1DF32751074E0011709A /* BaseCoordinator.swift */,
 				9CCB1DF5275107C80011709A /* CoordinatorType.swift */,
 				9CCB1E00275109ED0011709A /* ApplicationCoordinator.swift */,
+				9C8577BB2756178D0016BD53 /* RootCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -252,6 +284,7 @@
 		9CCB1E23275121840011709A /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				9C8577B0275615720016BD53 /* Simple Controler */,
 				9CCB1E24275121980011709A /* TabBar */,
 			);
 			path = Flows;
@@ -260,6 +293,7 @@
 		9CCB1E24275121980011709A /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				9C8577AF27552BA70016BD53 /* Base Coordinators */,
 				9CCB1E2E275124FA0011709A /* TabbarModule */,
 				9CCB1E2B2751222E0011709A /* TabbarCoordinator */,
 				9C8577AD275526760016BD53 /* Tabbar.storyboard */,
@@ -367,6 +401,7 @@
 			files = (
 				9C8577AE275526760016BD53 /* Tabbar.storyboard in Resources */,
 				9CCB1DEB2751071F0011709A /* LaunchScreen.storyboard in Resources */,
+				9C8577B2275615840016BD53 /* TestController.storyboard in Resources */,
 				9CCB1DE82751071F0011709A /* Assets.xcassets in Resources */,
 				9CCB1DE62751071C0011709A /* Main.storyboard in Resources */,
 			);
@@ -386,13 +421,16 @@
 				9CCB1E0F27510D270011709A /* ZoomModeChecker.swift in Sources */,
 				9CCB1DE12751071C0011709A /* SceneDelegate.swift in Sources */,
 				9CCB1E4527512C770011709A /* UIViewController+Extensions.swift in Sources */,
+				9C8577B4275615980016BD53 /* TestViewController.swift in Sources */,
 				9CCB1E4127512A6E0011709A /* UIStoryboard+Extensions.swift in Sources */,
 				9CCB1E222751209F0011709A /* CoordinatorFactory.swift in Sources */,
 				9CCB1E1E27511EC90011709A /* ApplicationFactoryProtocol.swift in Sources */,
+				9C8577B6275616220016BD53 /* TestCoordinatorOutput.swift in Sources */,
 				9CCB1E34275125230011709A /* TabbarViewController.swift in Sources */,
 				9CCB1E0727510AB00011709A /* Routable.swift in Sources */,
 				9CCB1E2A275122220011709A /* TabbarFactoryProtocol.swift in Sources */,
 				9CCB1E1127510D510011709A /* InfoAlert.swift in Sources */,
+				9C8577BC2756178D0016BD53 /* RootCoordinator.swift in Sources */,
 				9CCB1E1A2751146B0011709A /* Storyboards.swift in Sources */,
 				9CCB1E3A2751269D0011709A /* Debug.swift in Sources */,
 				9CCB1E26275121AC0011709A /* TabbarCoordinator.swift in Sources */,
@@ -403,6 +441,7 @@
 				9CCB1E0C27510CEE0011709A /* Reloadable.swift in Sources */,
 				9CCB1E2027511EF90011709A /* BaseViewProtocol.swift in Sources */,
 				9CCB1E1C275114B70011709A /* Router.swift in Sources */,
+				9C8577BA275616E10016BD53 /* TestFactoryProtocol.swift in Sources */,
 				9CCB1E4727512CBA0011709A /* NSObject+ClassDefinition.swift in Sources */,
 				9CCB1E0527510A7B0011709A /* CompletionBlock.swift in Sources */,
 				9CCB1DF9275108060011709A /* DeepLinkOption.swift in Sources */,
@@ -414,6 +453,7 @@
 				9CCB1E4327512B000011709A /* Iteratable.swift in Sources */,
 				9CCB1E2D275123EE0011709A /* TabbarItem.swift in Sources */,
 				9CCB1E01275109ED0011709A /* ApplicationCoordinator.swift in Sources */,
+				9C8577B8275616310016BD53 /* TestCoordinator.swift in Sources */,
 				9CCB1E4C27512F780011709A /* ModalPresentationController.swift in Sources */,
 				9CCB1E4927512D5E0011709A /* Error+Extension.swift in Sources */,
 				9CCB1E0327510A5E0011709A /* ErrorReporter.swift in Sources */,

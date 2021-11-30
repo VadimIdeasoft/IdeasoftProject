@@ -8,4 +8,5 @@
 import UIKit
 protocol CoordinatorFactoryProtocol {
     func makeTabbarCoordinator() -> CoordinatorType & TabbarCoordinatorOutput
+    func makeTestCoordinator(router: RouterType, with color: UIColor) -> CoordinatorType
 }

@@ -24,3 +24,5 @@ private extension ModulesFactory {
 extension ModulesFactory: TabbarFactoryProtocol {}
 
 extension ModulesFactory: ApplicationFactoryProtocol {}
+
+extension ModulesFactory: TestFactoryProtocol {}

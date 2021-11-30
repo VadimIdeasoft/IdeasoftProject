@@ -28,6 +28,11 @@ extension CoordinatorFactory: CoordinatorFactoryProtocol {
         
         return coordinator
     }
+    
+    func makeTestCoordinator(router: RouterType, with color: UIColor) -> CoordinatorType {
+        let coordinator = TestCoordinator(router: router, factory: modulesFactory, coordinatorFactory: self, color: color)
+        return coordinator
+    }
 }
     
 // MARK: - Private methods
