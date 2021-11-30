@@ -68,6 +68,7 @@
 		9CCB1E4927512D5E0011709A /* Error+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB1E4827512D5E0011709A /* Error+Extension.swift */; };
 		9CCB1E4C27512F780011709A /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB1E4B27512F780011709A /* ModalPresentationController.swift */; };
 		9CCB1E4E275130410011709A /* SheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB1E4D275130410011709A /* SheetPresentationController.swift */; };
+		9CDB952C27566E4300BF8A12 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB952B27566E4300BF8A12 /* ReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +135,7 @@
 		9CCB1E4827512D5E0011709A /* Error+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Extension.swift"; sourceTree = "<group>"; };
 		9CCB1E4B27512F780011709A /* ModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
 		9CCB1E4D275130410011709A /* SheetPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetPresentationController.swift; sourceTree = "<group>"; };
+		9CDB952B27566E4300BF8A12 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +284,8 @@
 				9CCB1E0427510A7B0011709A /* CompletionBlock.swift */,
 				9CCB1E2C275123EE0011709A /* TabbarItem.swift */,
 				9CCB1E4227512B000011709A /* Iteratable.swift */,
+				9CDB952B27566E4300BF8A12 /* ReusableView.swift */,
+				9C8577D1275667290016BD53 /* NibLoadableView.swift */,
 			);
 			path = CodeSugare;
 			sourceTree = "<group>";
@@ -291,8 +295,6 @@
 			children = (
 				9CCB1E3B275127320011709A /* VIP protocols */,
 				9CCB1E0D27510D1B0011709A /* Tools */,
-				9CCB1DFB2751083D0011709A /* CodeSugare */,
-				9CCB1DFA275108340011709A /* Extensions */,
 				9CCB1E0227510A5E0011709A /* ErrorReporter.swift */,
 			);
 			path = "Supporting Sources";
@@ -323,8 +325,10 @@
 		9CCB1E0D27510D1B0011709A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				9C8577D32756682D0016BD53 /* Gesture Recognizers */,
 				9C8577C7275666050016BD53 /* Animators */,
+				9CCB1DFB2751083D0011709A /* CodeSugare */,
+				9CCB1DFA275108340011709A /* Extensions */,
+				9C8577D32756682D0016BD53 /* Gesture Recognizers */,
 				9CCB1E4A27512F660011709A /* Presenters */,
 				9CCB1E0E27510D270011709A /* ZoomModeChecker.swift */,
 				9CCB1E1027510D510011709A /* InfoAlert.swift */,
@@ -332,7 +336,6 @@
 				9CCB1E192751146B0011709A /* Storyboards.swift */,
 				9CCB1E392751269D0011709A /* Debug.swift */,
 				9CCB1E4627512CBA0011709A /* NSObject+ClassDefinition.swift */,
-				9C8577D1275667290016BD53 /* NibLoadableView.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				9CCB1E0C27510CEE0011709A /* Reloadable.swift in Sources */,
 				9CCB1E2027511EF90011709A /* BaseViewProtocol.swift in Sources */,
 				9C8577D0275666D00016BD53 /* SheetViewController.swift in Sources */,
+				9CDB952C27566E4300BF8A12 /* ReusableView.swift in Sources */,
 				9CCB1E1C275114B70011709A /* Router.swift in Sources */,
 				9C8577BA275616E10016BD53 /* TestFactoryProtocol.swift in Sources */,
 				9CCB1E4727512CBA0011709A /* NSObject+ClassDefinition.swift in Sources */,
