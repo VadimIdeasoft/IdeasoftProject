@@ -29,7 +29,7 @@ enum TabbarItem: Int, CaseIterable, Equatable, Codable {
                      "Second tab bar" )
             
         case .three:
-            return ( NSLocalizedString("Me", comment: ""),
+            return ( NSLocalizedString("Three", comment: ""),
                      UIImage(systemName: "xmark.circle.fill")!.withRenderingMode(.alwaysTemplate),
                      UIImage(systemName: "xmark.circle.fill")!.withRenderingMode(.alwaysTemplate),
                      "Third tab bar" )
